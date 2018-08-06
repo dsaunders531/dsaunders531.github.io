@@ -1,0 +1,73 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: ghostwhite;
+    color: black;
+}
+
+
+header {
+     background-color: darkslategray;
+     color: whitesmoke;
+}
+
+footer {
+    min-height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+content .container 
+{
+    padding-top: 14px;
+    padding-bottom: 21px;
+    margin-bottom: 40px;
+}
+
+footer .container p {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+a {
+    color: darkslateblue;
+}
+
+a:hover, a:focus
+{
+    color: black;
+}
+
+footer .container a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+footer .container a:hover, footer .container a:focus
+{
+    color: gainsboro;
+    font-weight:bold;
+}
+
+content dl dt
+{
+    margin-top: 21px;
+    margin-left: 21px;
+    margin-right: 21px;    
+    padding: 7px;
+    background-color: lightblue;
+    min-height: 30px;
+}
+content dl dd {
+    padding: 7px;
+    background-color: gainsboro;
+    margin-bottom: 0px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
