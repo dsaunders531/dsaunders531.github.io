@@ -339,7 +339,7 @@
                 
                     After clicking on ‘Review this parcel’ you
                     are taken to a form with a dropdown. The list contains the food items in the
-                    parcel. Select an item and click ‘Review selected item’.
+                    parcel. Select an item and the options below will become active.
                 
             </p>
 
@@ -412,6 +412,8 @@
                 
             </p>
 
+            <p>There is a little bit of jQuery, AJAX and web api work on the ReviewProcess page where the data is obtained and saved via api calls.</p>
+
             <p>
                 
                     The review part is not perfect; I wanted to
@@ -422,8 +424,12 @@
                 
             </p>
 
-
-
+            <p>The code is structured into a data access layer (QAFoods.Dal), business logic layer (QAFoods.BLL), unit tests and the main application.</p>
+            <p>The data access layer uses entity framework and will automatically create and update the underlying database.</p>
+            <p>The business logic layer provides services to the main application. The services simplify the application controllers. There is no need to pass repositories around, these are automatically configured by the services.</p>
+            <p>Using services to do all the data processing and business rules means they can be injected wherever they are needed. For example, the test result page uses injection to get an instance of the test result service 
+            which contains all the calculations the page needs.</p>
+            <p>1 unit test has been provided. It uses a fake repository to prove that data is saved.</p>
 
             <div class="alert alert-info">
                 <a href="https://github.com/dsaunders531/ASPNET-CORE-QAFOOD">Get the project.</a>
